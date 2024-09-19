@@ -1,0 +1,140 @@
+/* General Styles */
+body {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0;
+  padding: 0 20px; /* Ajustar el padding */
+}
+
+header {
+  background-color: #111;
+  padding: 10px 0;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;  /* Para ajustar el contenido en pantallas pequeñas */
+  width: 100vw;  /* Ocupa el 100% del ancho de la pantalla */
+  position: fixed;  /* Fijo en la parte superior */
+  top: 0;  /* Se sitúa en la parte superior */
+  left: 0;  /* Se alinea a la izquierda */
+  z-index: 1000;  /* Se asegura que esté por encima de otros elementos */
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-right: 5%;
+}
+
+.logo span {
+  color: #00ff88;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  margin: 0;
+}
+
+nav ul li {
+  margin-left: 20px;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-weight: 300;
+}
+
+.hero {
+  background: linear-gradient(90deg, rgba(0, 255, 136, 0.7), rgba(0, 0, 0, 0.7)), url('/assets/hero-bg.jpg') center/cover;
+  color: white;
+  padding: 100px 0;
+  text-align: center;
+  width: 100vw; /* Se asegura de que el fondo abarque el ancho completo */
+}
+
+.hero h1 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  margin-bottom: 30px;
+}
+
+.btn-primary {
+  background-color: #00ff88;
+  color: #111;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: 600;
+}
+
+.about, .services, .projects, .contact {
+  padding: 60px 0;
+  text-align: center;
+  border: 2px solid #000; /* Ajusta el color y grosor según tus necesidades */
+  border-radius: 10px; /* Si deseas bordes redondeados */
+}
+
+
+h2 {
+  font-size: 2rem;
+  margin-bottom: 40px;
+}
+
+.service, .project {
+  margin-bottom: 30px;
+}
+
+.service h3, .project h3 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.project img {
+  max-width: 100%;
+  border-radius: 5px;
+}
+
+.contact form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.contact input, .contact textarea {
+  width: 100%;
+  max-width: 500px;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+.contact button {
+  background-color: #00ff88;
+  color: #111;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+footer {
+  text-align: center;
+  padding: 20px 0;
+  background-color: #111;
+  color: white;
+  width: 100vw;
+}
